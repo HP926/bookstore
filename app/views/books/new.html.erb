@@ -5,7 +5,7 @@
   <p>Author</p>
   <%= f.text_field(:author)%>
   <p>Published:</p>
-  <%= f.select(:released_date, 1949..2015)%>
+  <%= f.date_select(:released_date)%>
   <%= f.submit('Save') %>
 
 <% end %>

@@ -46,7 +46,7 @@ end
 private
 
 def book_params
-      params.require(:book).permit(:title, :released_date)
+      params.require(:book).permit(:title, :author, :released_date)
       
 end
 

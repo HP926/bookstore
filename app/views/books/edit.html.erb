@@ -1,1 +1,11 @@
-new.html.erb
+<%= form_for (@book) do |f| %>
+
+  <p>Title:</p>
+    <%= f.text_field(:title)%>
+  <p>Author</p>
+  <%= f.text_field(:author)%>
+  <p>Published:</p>
+  <%= f.date_select(:released_date)%>
+  <%= f.submit('update') %>
+
+<% end %>
