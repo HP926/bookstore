@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
-
+    #belongs_to :base
+      before_action :find_book, only: [:show, :edit, :update, :destroy]
 def index
   @books = Book.all
 end

@@ -4,8 +4,9 @@
 <li>
 <%= book.title %>
 <%= book.author %>
-<%= book.released_date %>
+<%= book.released_on %>
 <%= link_to('edit', edit_book_path(book.id)) %>
+ <%= link_to('delete', book_path(book.id), method: :delete) %> 
 </li>
 <% end %>
 </ul>
